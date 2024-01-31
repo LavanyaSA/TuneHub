@@ -1,0 +1,61 @@
+
+h1 {
+    color: navy; 
+    text-align: center;
+}
+.non-premium a {
+    color: blue; 
+    text-decoration: none;
+    display: block; 
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+
+.non-premium a:hover {
+    color:darkpink; 
+}
+
+
+.non-premium a[href="logout"] {
+    color: purple;
+    text-align: center; 
+}
+
+
+.premium table {
+    width: 100%; 
+    border-collapse: collapse; 
+}
+
+
+.premium th {
+    background-color:transperant; 
+    padding: 8px; 
+    text-align: left; 
+}
+
+
+.premium td {
+    padding: 8px;
+}
+
+
+.premium audio {
+    width: 100%; 
+}
+.premium a{
+	color: black; 
+    text-decoration: none;
+    display: block; 
+    background-color:purple;
+    margin-bottom: 10px;
+    text-align: center;
+}
+body{
+	background-image: url('../images/customerHome.jpeg');
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat; 
+}
+

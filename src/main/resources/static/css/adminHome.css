@@ -1,0 +1,25 @@
+h1{
+	text-align:center;
+}
+
+a {
+    color: black; 
+    text-decoration: none;
+    display: block; 
+    background-color:transperant;
+    margin-bottom: 10px;
+    text-align:center;
+}
+
+
+a:hover {
+    color: darkblue;
+    text-align:center;
+}
+body{
+	background-image: url('../images/adminHome.jpeg');
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat; 
+}
+

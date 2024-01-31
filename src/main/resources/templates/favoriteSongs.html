@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+<link rel="stylesheet" href="./css/favoriteSong.css">
+<style type="text/css">
+	iframe {
+            height: 100px;
+            width: 500px;
+        }
+</style>
+</head>
+<body>
+	<h1>Favorite Songs</h1>
+    <table  border>
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Artist</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr th:each="song : ${favoriteSongs}">
+                <td th:text="${song.name}"></td>
+                <td th:text="${song.artist}"></td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>

@@ -1,0 +1,28 @@
+h1 {
+            text-align: center;
+            margin-bottom: 20px;
+            font-family: "Times New Roman", Times, serif;
+        }
+
+        table {
+            width: 80%;
+            margin: 0 auto;
+            border-collapse: collapse;
+        }
+
+        th, td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: left;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        th {
+            background-color: #f2f2f2;
+        }
+        body {
+   	background-image: url('../images/favoriteSong.jpeg');
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat; 
+     }

@@ -3,10 +3,47 @@
 <head>
 <meta charset="ISO-8859-1">
 <title>Insert title here</title>
+<link rel="stylesheet" th:href="@{/css/customerHome.css}">
 </head>
 <body>
 	<h1>Customer Home</h1>
-	<a href="pay">Get Premium</a>	
-	<a href="logout">LOGOUT</a>
+	<div th:unless="${isPremium}" class="non-premium">
+		<a href="pay">Get Premium</a>
+		<br>	
+		<a href="logout">LOGOUT</a>
+	</div>
+	<div th:if="${isPremium}" class="premium">
+		<table border>
+		<thead>
+			<tr>
+				<th>Name</th>
+				<th>Artist</th>
+				<th>Genre</th>
+				<th>Play</th>
+				<th>Add to Favorites</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr th:each="song:${songs}">
+				<td th:text="${song.name}">   </td>
+				<td th:text="${song.artist}">  </td>
+				<td th:text="${song.genre}">   </td>
+				<td>
+					<audio controls>
+						<source th:src="${song.link}" type="audio/mpeg">
+					</audio>
+				    </td>
+				    <td>
+                <form th:action="addToFavorites" method="post">
+                    <input type="hidden" name="id" th:value="${song.id}">
+                    <button type="submit">Add to Favorites</button>
+                </form>
+            </td> 
+			</tr>
+		</tbody>
+	</table>
+	<br>
+	<a href="viewFavoriteSongs">View Favorite songs</a>
+	</div>
 </body>
 </html>

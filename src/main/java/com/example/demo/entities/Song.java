@@ -14,19 +14,22 @@ public class Song
 	String artist;
 	String genre;
 	String link;
+	boolean favorite;
 	@ManyToMany
 	List<Playlist> playlists;
 	public Song() {
 		super();
 		// TODO Auto-generated constructor stub
 	}
-	public Song(int id, String name, String artist, String genre, String link, List<Playlist> playlists) {
+	public Song(int id, String name, String artist, String genre, String link, boolean favorite,
+			List<Playlist> playlists) {
 		super();
 		this.id = id;
 		this.name = name;
 		this.artist = artist;
 		this.genre = genre;
 		this.link = link;
+		this.favorite = favorite;
 		this.playlists = playlists;
 	}
 	public int getId() {
@@ -59,6 +62,12 @@ public class Song
 	public void setLink(String link) {
 		this.link = link;
 	}
+	public boolean isFavorite() {
+		return favorite;
+	}
+	public void setFavorite(boolean favorite) {
+		this.favorite = favorite;
+	}
 	public List<Playlist> getPlaylists() {
 		return playlists;
 	}
@@ -68,7 +77,8 @@ public class Song
 	@Override
 	public String toString() {
 		return "Song [id=" + id + ", name=" + name + ", artist=" + artist + ", genre=" + genre + ", link=" + link
-				+ ", playlists=" + playlists + "]";
+				+ ", favorite=" + favorite + ", playlists=" + playlists + "]";
 	}
+	
 	
 }

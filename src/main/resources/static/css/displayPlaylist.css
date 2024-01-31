@@ -1,0 +1,30 @@
+table {
+            border-collapse: collapse;
+            width: 100%;
+        }
+th, td {
+            border: 1px solid #ddd;
+            padding: 5px;
+            text-align: left;
+        }
+th {
+            background-color: #f2f2f2;
+        }
+ul {
+            margin: 0;
+            padding: 0;
+        }
+li {
+            list-style-type: none;
+            margin-bottom: 5px;
+     }
+audio {
+            display: block;
+      }
+body {
+    font-family: Arial, sans-serif;
+   	background-image: url('../images/viewPlaylist.jpeg');
+    background-size: 1000px; 
+    background-position: center; 
+    background-repeat: no-repeat; 
+     }

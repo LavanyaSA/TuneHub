@@ -9,11 +9,14 @@ import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestParam;
 
 import com.example.demo.entities.Playlist;
 import com.example.demo.entities.Song;
 import com.example.demo.services.PlaylistService;
 import com.example.demo.services.SongService;
+import org.springframework.web.bind.annotation.RequestBody;
+
 @Controller
 public class PlaylistController
 {
@@ -51,4 +54,5 @@ public class PlaylistController
 		model.addAttribute("allPlaylists", allPlaylists);
 		return "displayPlaylists";
 	}
+	
 }

@@ -8,6 +8,7 @@ import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestParam;
 
 import com.example.demo.entities.Song;
 import com.example.demo.services.SongService;
@@ -53,5 +54,23 @@ public class SongController
 			return "makePayment";
 		}
 	}
+	
+	@PostMapping("/addToFavorites")
+    public String addToFavorites(@RequestParam("id") int id) {
+        Song song = service.findSongById(id);
+        if (song != null) {
+            song.setFavorite(true);
+            service.save(song);
+        }
+        return "customerHome"; 
+    }
+	
+	
+	@GetMapping("/viewFavoriteSongs")
+    public String viewFavoriteSongs(Model model) {
+        List<Song> favoriteSongs = service.fetchFavoriteSongs();
+        model.addAttribute("favoriteSongs", favoriteSongs);
+        return "favoriteSongs"; 
+    }
 
 }

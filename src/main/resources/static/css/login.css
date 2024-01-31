@@ -1,0 +1,51 @@
+
+body, h1, h2, p, form, label, input {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-image: url('../images/login.jpeg');
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat; 
+}
+
+
+form {
+    max-width: 300px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color:tranperant;
+    border-radius: 8px;
+}
+
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    color: light blue;
+}
+
+
+input {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 16px;
+    border: 1px solid black;
+    border-radius: 4px;
+}
+
+input[type="submit"] {
+    background-color: pink;
+    color: black;
+    border: none;
+    padding: 10px 16px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: rgb(255, 128, 192)pink;
+}

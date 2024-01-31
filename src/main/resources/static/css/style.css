@@ -1,3 +1,78 @@
-body{
-	background-color:grey;
+/*
+body, h1, h2, p, a {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+a {
+    display: inline-block;
+    margin: 10px;
+    padding: 8px 16px;
+    text-decoration: none;
+    color: #fff; 
+    background-color: #3498db;
+    border-radius: 4px; 
+}
+
+a:hover {
+    background-color: #2980b9; 
+}
+
+
+html, body {
+    height: 100%;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #ecf0f1;
+    background-image: url('../images/index.jpeg');
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat; 
+}*/
+
+/* navbar.css */
+
+/* Basic navbar styling */
+.navbar {
+    background-color: #333; /* Set background color */
+    color: #fff; /* Set text color */
+    padding: 10px 0; /* Add padding */
+}
+
+.container {
+    width: 80%; /* Set container width */
+    margin: 0 auto; /* Center the container */
+}
+
+.nav-list {
+    list-style-type: none; /* Remove default list styles */
+    padding: 0;
+    margin: 0;
+}
+
+.nav-list li {
+    display: inline-block; /* Display navbar items horizontally */
+    margin-right: 20px; /* Add margin between items */
+}
+
+.nav-list li a {
+    color: #fff; /* Set link text color */
+    text-decoration: none; /* Remove underline */
+    font-size: 16px; /* Adjust font size as needed */
+}
+
+.nav-list li a:hover {
+    text-decoration: underline; /* Underline on hover */
+}
+h1{
+	display:block;
+	text-align:center;
 }

@@ -37,5 +37,18 @@ public class SongServiceImplementation implements SongService {
 		repo.save(song);
 		
 	}
+	@Override
+	public Song findSongById(int id) {
+		return repo.findById(id);
+	}
+	@Override
+	public void save(Song song) {
+		repo.save(song);
+		
+	}
+	@Override
+	public List<Song> fetchFavoriteSongs() {
+		return repo.findByFavoriteTrue();
+	}
 
 }
